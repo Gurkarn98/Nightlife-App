@@ -38,7 +38,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-11">
-          <input class="input" type="text" name="city" autocomplete="off" ng-model="term" placeholder="WHERE YOU AT?" ng-change="onInputChange()">
+          <input ng-value="oldTerm" class="input" type="text" name="city" autocomplete="off" ng-model="term" placeholder="WHERE YOU AT?" ng-change="onInputChange()">
         </div>
         <div class="col-sm-1">
           <button class="submit" ng-click="getTerm()">Go</button>
