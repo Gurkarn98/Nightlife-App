@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div ng-repeat="business in $ctrl.grouped">
+    
+      <div class="tab row">
+        <div class="parent col-sm-3">
+          <img id="img" ng-src="{{business.business.image_url}}" ng-show="{{business.business.image_url !== '' ? true : false}}" width="160px" height="100px" >
+          <div id="img-text" ng-show="{{business.business.image_url === '' ? true : false}}" height="100px" >Sorry, No image available</div>
+        </div>
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="parent col-sm-9">
+              <div id="text-row">
+                <a href="{{business.business.url}}" target="_blank">
+                  <h4>{{business.business.name}}</h4>
+                </a>
+                <h6>{{business.business.location.display_address.join(" ")}}</h6>
+              </div>
+            </div>
+            <div class="parent col-sm-3">
+              <div class="button"><div id="{{business.business.id}}" class="btn" ng-click="$ctrl.going($event)">{{"Going : "+business.record.total}}</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+</div>

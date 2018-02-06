@@ -1,0 +1,117 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+  background : black
+}
+header {
+  margin-top : 5%;
+  margin-bottom : 5%;
+}
+h1 {
+  font-weight: bold;
+  font-family: 'Lobster', cursive;
+  color : white;
+  text-align : center;
+  font-size : 75px;
+  text-shadow : 10px 5px 20px #ff0000
+}
+div i {
+  color : white;
+  font-size : 50px;
+}
+h5 {
+  color : white
+}
+footer {
+  font-size: 14px;
+  color : white;
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+.footer{
+  font-size : 14px
+}
+.container-fluid {
+  width : 80%
+}
+.tab {
+  line-height : 120px;
+  border : 1px solid;
+  background : white;
+}
+.input {
+  width : 100%;
+  margin : 0;
+  text-align : center;
+  color : white;
+  background : black;
+  border: 2px solid white;
+  border-radius : 25px
+}
+.submit {
+  width : 100%;
+  margin : 0;
+  background : black;
+  color : white;
+  border : 2px solid white;
+  border-radius : 25px
+}
+.submit:hover {
+  cursor : pointer
+}
+button:focus, input:focus {
+  outline:0;
+}
+.container {
+  background : black;
+  padding : 0
+}
+.col-sm-11, .col-sm-1 {
+  padding : 1px
+}
+::-webkit-input-placeholder {
+  color: white;
+}
+::-moz-placeholder {
+  color: white;
+}
+:-ms-input-placeholder {
+  color: white;
+}
+:-moz-placeholder {
+  color: white;
+}
+.parent {
+  line-height : 150px
+}
+#img{
+  border-radius : 10px;
+  border : 5px solid #7c1313;
+  font-size : 10px;
+  padding : 0px;
+  margin : 0px;
+}
+#img-text{
+  vertical-align : middle;
+  border-radius : 10px;
+  border : 5px solid #7c1313;
+  font-size : 12px;
+  display : inline;
+  padding : 38px 10px 39px 10px
+}
+#text-row {
+  display : inline-block;
+  vertical-align: middle;
+}
+#going {
+  padding : 0px;
+  vertical-align : middle
+}
+.button {
+  border : 1px solid #7c1313;
+  display : inline;
+  background : #ffe5e5;
+  padding : 5% 5% 5% 5%;
+  border-radius : 10px
+}
