@@ -69,6 +69,7 @@ angular
           }).then(function(response) {
             if (response.data !== "not logged"){
               self.term = response.data
+              $rootScope.oldTerm = self.term
               previousTerm = self.term
               getData();
             }
