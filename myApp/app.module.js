@@ -1,0 +1,1 @@
+angular.module('nightlifeApp', ['ngRoute', 'searchResult']);

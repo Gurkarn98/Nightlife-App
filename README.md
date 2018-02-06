@@ -1,2 +1,0 @@
-# Nightlife-App
-Nightlife App

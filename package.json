@@ -1,0 +1,32 @@
+{
+  "name": "Nightlife-Coordination-App",
+  "version": "0.0.1",
+  "description": "Nightlife Coordination App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "passport": "^0.4.0",
+    "passport-twitter": "^1.0.4",
+    "connect-mongo": "^2.0.1",
+    "mongodb": "^3.0.2",
+    "body-parser": "^1.18.2",
+    "yelp-fusion": "^2.0.3",
+    "express-session": "^1.15.6",
+    "cookie-parser": "^1.4.3"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/welcome-project"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}

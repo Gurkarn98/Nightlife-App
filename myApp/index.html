@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="nightlifeApp">
+  <head>
+    <title>Nightlife App</title>
+    <meta name="description" content="Nightlife App">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" 
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-route.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js" 
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" 
+            crossorigin="anonymous"></script>
+    <script src="/app.module.js"></script>
+    <script src="/app.config.js"></script>
+    <script src="/search/search.module.js"></script>
+    <script src="/search/search.component.js"></script>
+  </head>
+  <body>
+    <header class="text-center">
+      <base href="/">
+      <h1>
+        Nightlife App
+      </h1>
+      <br>
+      <div><i class="fas fa-map-marker-alt"></i><i class="fas fa-taxi"></i><i class="fas fa-glass-martini"></i></div>
+      <br>
+      <h5>
+        Going anywhere tonight? Check out here, which bars are hopping tonight!
+      </h5>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-11">
+          <input class="input" type="text" name="city" autocomplete="off" ng-model="term" placeholder="WHERE YOU AT?" ng-change="onInputChange()">
+        </div>
+        <div class="col-sm-1">
+          <button class="submit" ng-click="getTerm()">Go</button>
+        </div>
+      </div>
+      <div class="view-container">
+        <div ng-view class="view-frame"></div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <div class="row">
+        <div class="col-sm-4">
+          <p><i class="footer fab fa-free-code-camp"></i> Built By <a href="https://www.freecodecamp.org/gurkarn98" target="_blank">@gurkarn98</a></p>
+        </div>
+        <div class="col-sm-4">
+          <p><i class="footer fab fa-twitter-square"></i> Twitter <a href="https://twitter.com/gurkarn98" target="_blank">@gurkarn98</a></p>
+        </div>
+        <div class="col-sm-4">
+          <p><i class="footer fab fa-github"></i> Github <a href="https://github.com/Gurkarn98" target="_blank">@gurkarn98</a></p>
+        </div>
+      </div> 
+      <div class="text-center">
+        <p><i class="footer fab fa-github"></i> Github repo <a href="https://github.com/Gurkarn98/Nightlife-App" target="_blank">Gurkarn98/Nightlife-App</a></p>
+        <p>Built on <a href="https://glitch.com/~where-you-at">glitch.com</a></p>
+      </div>
+    </footer>
+    
+  </body>
+</html>
