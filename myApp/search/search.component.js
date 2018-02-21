@@ -2,7 +2,7 @@
 angular
   .module('searchResult')
   .component('searchResult', {
-    templateUrl : "/search/search.tempelate.html",
+    templateUrl : "/search/search.template.html",
     controller: function seachResultController($rootScope, $http){
       var self = this;
       var resEnd = false;
